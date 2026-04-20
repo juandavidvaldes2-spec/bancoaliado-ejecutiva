@@ -32,10 +32,10 @@ body {
 
 .slide {
   width: 1280px;
-  height: 720px;
+  min-height: 720px; height: auto;
   margin: 20px auto;
   position: relative;
-  overflow: hidden;
+  overflow: visible;
   box-shadow: 0 8px 40px rgba(0,0,0,0.15);
   background: var(--white);
   page-break-after: always;
@@ -63,13 +63,13 @@ body {
   height: 6px;
   background: linear-gradient(90deg, var(--gold), var(--gold-light), var(--gold));
 }
-.cover .label { font-size: 13px; letter-spacing: 4px; color: var(--gold); font-weight: 600; text-transform: uppercase; margin-bottom: 16px; }
+.cover .label { font-size: 16px; letter-spacing: 4px; color: var(--gold); font-weight: 600; text-transform: uppercase; margin-bottom: 16px; }
 .cover h1 { font-family: 'Playfair Display', serif; font-size: 56px; color: white; font-weight: 700; line-height: 1.15; margin-bottom: 8px; }
 .cover .subtitle { font-size: 18px; color: rgba(255,255,255,0.6); font-weight: 300; margin-bottom: 48px; }
 .cover .gold-line { width: 80px; height: 3px; background: var(--gold); margin-bottom: 32px; }
-.cover .client-label { font-size: 11px; letter-spacing: 3px; color: var(--gold); text-transform: uppercase; margin-bottom: 8px; }
+.cover .client-label { font-size: 14px; letter-spacing: 3px; color: var(--gold); text-transform: uppercase; margin-bottom: 8px; }
 .cover .client { font-family: 'Playfair Display', serif; font-size: 42px; color: white; font-weight: 700; margin-bottom: 48px; }
-.cover .footer-info { font-size: 13px; color: rgba(255,255,255,0.4); }
+.cover .footer-info { font-size: 16px; color: rgba(255,255,255,0.4); }
 
 /* ===== DIVIDER SLIDE ===== */
 .slide.divider {
@@ -87,7 +87,7 @@ body {
   background: var(--gold);
 }
 .divider .chapter-num { font-family: 'Playfair Display', serif; font-size: 72px; color: var(--gold); font-weight: 700; opacity: 0.3; margin-bottom: -20px; }
-.divider .chapter-label { font-size: 12px; letter-spacing: 3px; color: var(--gold); text-transform: uppercase; font-weight: 600; margin-bottom: 16px; }
+.divider .chapter-label { font-size: 15px; letter-spacing: 3px; color: var(--gold); text-transform: uppercase; font-weight: 600; margin-bottom: 16px; }
 .divider .gold-line { width: 60px; height: 3px; background: var(--gold); margin-bottom: 24px; }
 .divider h2 { font-family: 'Playfair Display', serif; font-size: 42px; color: white; font-weight: 700; line-height: 1.2; max-width: 900px; }
 
@@ -101,12 +101,12 @@ body {
 }
 .slide.content .slide-body {
   padding: 32px 80px 40px;
-  height: 714px;
+  min-height: 714px; height: auto;
   display: flex;
   flex-direction: column;
 }
 .slide.content .section-label {
-  font-size: 10px;
+  font-size: 13px;
   letter-spacing: 3px;
   color: var(--gold);
   text-transform: uppercase;
@@ -129,7 +129,7 @@ body {
   margin-bottom: 20px;
 }
 .slide.content .body-text {
-  font-size: 14px;
+  font-size: 17px;
   color: var(--text);
   line-height: 1.6;
   margin-bottom: 16px;
@@ -137,7 +137,7 @@ body {
 }
 .slide.content .main-content {
   flex: 1;
-  overflow: hidden;
+  overflow: visible;
 }
 .slide.content .slide-footer {
   display: flex;
@@ -145,7 +145,7 @@ body {
   align-items: center;
   padding-top: 8px;
   border-top: 1px solid #e8e8e8;
-  font-size: 10px;
+  font-size: 13px;
   color: var(--light);
 }
 
@@ -154,7 +154,7 @@ body {
 .bullet-list li {
   padding: 10px 0 10px 24px;
   position: relative;
-  font-size: 14px;
+  font-size: 17px;
   line-height: 1.5;
   color: var(--text);
   border-bottom: 1px solid #f0f0f0;
@@ -195,7 +195,7 @@ body {
   left: 12px;
 }
 .quote-box p {
-  font-size: 14px;
+  font-size: 17px;
   font-style: italic;
   color: var(--mid);
   line-height: 1.5;
@@ -208,7 +208,7 @@ body {
   color: white;
   padding: 12px 20px;
   border-radius: 6px;
-  font-size: 13px;
+  font-size: 16px;
   font-weight: 500;
   margin-top: 12px;
   line-height: 1.5;
@@ -239,7 +239,7 @@ body {
 .card.red-border { border-top-color: var(--accent); }
 
 .card .card-title {
-  font-size: 13px;
+  font-size: 16px;
   font-weight: 700;
   color: var(--navy);
   text-transform: uppercase;
@@ -247,7 +247,7 @@ body {
   margin-bottom: 8px;
 }
 .card .card-body {
-  font-size: 12px;
+  font-size: 15px;
   color: var(--text);
   line-height: 1.5;
 }
@@ -280,12 +280,12 @@ body {
   line-height: 1;
 }
 .stat-card .stat-unit {
-  font-size: 14px;
+  font-size: 17px;
   color: var(--gold);
   font-weight: 600;
 }
 .stat-card .stat-label {
-  font-size: 11px;
+  font-size: 14px;
   color: var(--mid);
   margin-top: 6px;
   line-height: 1.3;
@@ -295,7 +295,7 @@ body {
 .data-table {
   width: 100%;
   border-collapse: collapse;
-  font-size: 12px;
+  font-size: 15px;
   margin: 8px 0;
 }
 .data-table th {
@@ -304,7 +304,7 @@ body {
   padding: 10px 14px;
   text-align: left;
   font-weight: 600;
-  font-size: 11px;
+  font-size: 14px;
   text-transform: uppercase;
   letter-spacing: 0.5px;
 }
@@ -326,11 +326,11 @@ body {
 }
 .compare-col {
   border-radius: 8px;
-  overflow: hidden;
+  overflow: visible;
 }
 .compare-col .col-header {
   padding: 12px 16px;
-  font-size: 12px;
+  font-size: 15px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -339,7 +339,7 @@ body {
 .compare-col .col-body {
   padding: 16px;
   background: var(--bg);
-  font-size: 12px;
+  font-size: 15px;
   line-height: 1.6;
   color: var(--text);
 }
@@ -361,7 +361,7 @@ body {
   border-radius: 0 6px 6px 0;
 }
 .voice .voice-role {
-  font-size: 10px;
+  font-size: 13px;
   font-weight: 700;
   color: var(--navy);
   text-transform: uppercase;
@@ -369,7 +369,7 @@ body {
   margin-bottom: 4px;
 }
 .voice .voice-quote {
-  font-size: 12px;
+  font-size: 15px;
   font-style: italic;
   color: var(--mid);
   line-height: 1.4;
@@ -399,13 +399,13 @@ body {
 .journey-step .step-indicator.warn { background: #ffc107; }
 .journey-step .step-indicator.bad { background: var(--accent); }
 .journey-step .step-title {
-  font-size: 11px;
+  font-size: 14px;
   font-weight: 700;
   color: var(--navy);
   margin-bottom: 6px;
 }
 .journey-step .step-desc {
-  font-size: 10px;
+  font-size: 13px;
   color: var(--mid);
   line-height: 1.4;
 }
@@ -436,7 +436,7 @@ body {
   font-weight: 400;
 }
 .big-quote .bq-source {
-  font-size: 12px;
+  font-size: 15px;
   color: var(--mid);
   margin-top: 20px;
   font-style: italic;
@@ -454,7 +454,7 @@ body {
 .closing-slide .gold-line-c { width: 80px; height: 3px; background: var(--gold); margin-bottom: 32px; }
 .closing-slide h2 { font-family: 'Playfair Display', serif; font-size: 72px; color: white; font-weight: 700; margin-bottom: 24px; }
 .closing-slide .cs-subtitle { font-size: 18px; color: rgba(255,255,255,0.5); margin-bottom: 8px; }
-.closing-slide .cs-brand { font-size: 14px; color: var(--gold); font-weight: 600; letter-spacing: 2px; text-transform: uppercase; margin-top: 40px; }
+.closing-slide .cs-brand { font-size: 17px; color: var(--gold); font-weight: 600; letter-spacing: 2px; text-transform: uppercase; margin-top: 40px; }
 
 /* Two column layout */
 .two-col {
@@ -478,7 +478,7 @@ body {
   text-align: center;
 }
 .perception-item .pi-label {
-  font-size: 10px;
+  font-size: 13px;
   font-weight: 700;
   color: white;
   text-transform: uppercase;
@@ -486,7 +486,7 @@ body {
   margin-bottom: 4px;
 }
 .perception-item .pi-desc {
-  font-size: 10px;
+  font-size: 13px;
   color: rgba(255,255,255,0.85);
   line-height: 1.3;
 }
@@ -535,12 +535,13 @@ body {
 <div class="slide content"><div class="top-bar"></div><div class="slide-body"><div class="section-label">Tono y códigos</div><h3>Qué significa "ser aliado". consistencia inusual entre todas las audiencias</h3><div class="title-line"></div><div class="main-content"><p class="body-text">Cuando se pidió a cada segmento definir "qué es ser aliado" sin inducción, todos convergieron en el mismo significado. Esta convergencia semántica espontánea es un activo de marca extraordinariamente raro:</p><div class="voices"><div class="voice"><div class="voice-role">DIRECTIVO</div><div class="voice-quote">"Alguien que no te deja caer, te respalda, se pone en tus zapatos."</div></div><div class="voice"><div class="voice-role">EQUIPO INTERNO</div><div class="voice-quote">"Persona con quien confía, que inspira confianza, que te acompaña."</div></div><div class="voice"><div class="voice-role">BANCA PRIVADA</div><div class="voice-quote">"Amigo que va de la mano contigo, en las buenas y en las malas."</div></div><div class="voice"><div class="voice-role">EMPRESARIAL</div><div class="voice-quote">"Socio de negocios. Estamos todos juntos en esto."</div></div><div class="voice"><div class="voice-role">PREFERENCIAL</div><div class="voice-quote">"Contigo, de tu lado, te apoya, te facilita las cosas."</div></div><div class="voice"><div class="voice-role">NO CLIENTES</div><div class="voice-quote">"Un equipo, un partner, el que te apoya. Suena como que invita."</div></div></div><div class="closing">El mercado ya interpreta el nombre en línea con lo que el banco quiere ser. La tarea es hacer visibles los hechos que lo prueban.</div></div><div class="slide-footer"><span>Banco Aliado. Estudio Cualitativo · SL Consultores</span><span>15 / 26</span></div></div></div>
 <div class="slide content"><div class="top-bar"></div><div class="slide-body"><div class="section-label">No clientes</div><h3>Cinco barreras que cierran la puerta antes de la consideración</h3><div class="title-line"></div><div class="main-content"><ul class="bullet-list"><li><strong>Desconocimiento.</strong> Jóvenes casi no lo registran. Adultos lo conocen de nombre. "Son calladitos, no hacen mucha bulla." El cerebro no puede elegir lo que no conoce.</li><li><strong>Percepciones heredadas.</strong> Corporativo, de comunidad, elitista, extranjero, nuevo. todas falsas o parciales. Estas percepciones actúan como "atajos mentales" que el mercado usa para descartarlo sin evaluarlo.</li><li><strong>Ausencia en ecosistema digital.</strong> Sin Yappy propio, sin Apple Pay. Para jóvenes: sin Yappy no hay conversación. La ausencia digital equivale a inexistencia social.</li><li><strong>Falta de gatillos visibles.</strong> No hay promociones en redes ni beneficios evidentes en la web. Sin estímulos, no hay razón para activar la consideración.</li><li><strong>Autoexclusión.</strong> Los no clientes asumen "no es para mí" sin haber verificado. Este barrera de autoexclusión es el más peligroso porque ni siquiera llegan a preguntar.</li></ul><div class="closing">La baja visibilidad no es modestia. Es una barrera real y operativa al crecimiento.</div></div><div class="slide-footer"><span>Banco Aliado. Estudio Cualitativo · SL Consultores</span><span>16 / 26</span></div></div></div>
 <div class="slide content"><div class="top-bar"></div><div class="slide-body"><div class="section-label">No clientes</div><h3>Lo que los no clientes piden para considerar al banco</h3><div class="title-line"></div><div class="main-content"><div class="two-col"><div><h4 style="font-size:12px;color:var(--navy);font-weight:700;text-transform:uppercase;margin-bottom:6px;">Adultos piden</h4><ul class="bullet-list"><li>Más presencia constante (no esporádica).</li><li>Promociones visibles: descuentos, cashback, beneficios reales en comercios frecuentes (supermercados, gasolineras, restaurantes).</li><li>Testimonios y referidos de gente cercana.</li><li>Flexibilidad para independientes.</li><li>Empatía ante problemas: no crucificar si un año fue malo.</li></ul></div><div><h4 style="font-size:12px;color:var(--navy);font-weight:700;text-transform:uppercase;margin-bottom:6px;">Jóvenes piden</h4><ul class="bullet-list"><li>Educación financiera en redes (TikTok, Instagram). Hay un déficit que los propios jóvenes reconocen.</li><li>Apertura 100% digital sin ir al banco.</li><li>App de primer nivel con todos los servicios.</li><li>Yappy (crítico, sin esto no hay relación).</li><li>Apple Pay.</li><li>Lenguaje comprensible, no jerga bancaria.</li></ul></div></div><div class="closing">No están cerrados al banco. Están pidiendo razones para considerarlo. La lista es clara y la mayoría es resoluble.</div></div><div class="slide-footer"><span>Banco Aliado. Estudio Cualitativo · SL Consultores</span><span>17 / 26</span></div></div></div>
-<div class="slide content"><div class="top-bar"></div><div class="slide-body"><div class="section-label">Relevo generacional</div><h3>Las nuevas generaciones y el banco de cara al futuro</h3><div class="title-line"></div><div class="main-content"><p class="body-text">El estudio revela un desafío generacional que va más allá de la tecnología. Es un cambio en cómo las nuevas generaciones construyen confianza, toman decisiones y se relacionan con las instituciones financieras:</p><ul class="bullet-list"><li><strong>La confianza ya no se hereda, se construye por experiencia directa.</strong> Los hijos de clientes de banca privada no se quedan "porque papá era cliente". Si el banco no les habla en su idioma y en sus canales, migran a Banco General por Yappy o a otros por comodidad. La lealtad generacional ya no es automática.</li><li><strong>Los jóvenes no buscan banco. buscan soluciones.</strong> No les interesa "ser clientes de un banco". Les interesa resolver: pagar, transferir, ahorrar, invertir. El banco que lo resuelva más fácil gana. Banco Aliado tiene el servicio pero no tiene el canal.</li><li><strong>La decisión bancaria joven es social, no individual.</strong> Los jóvenes eligen por lo que usan sus amigos, por lo que ven en TikTok, por recomendación directa. Si nadie en su círculo habla de Banco Aliado, el banco no existe para ellos. La estrategia de captación juvenil debe ser viral, no publicitaria.</li><li><strong>El tono visual actual es barrera para jóvenes, código de confianza para adultos.</strong> Los jóvenes ven la web y dicen "serio, ejecutivo, anticuado". Los adultos dicen "elegante, profesional". Cualquier evolución visual debe equilibrar ambos sin traicionar a ninguno.</li><li><strong>Educación financiera como puerta de entrada.</strong> Varios jóvenes dijeron explícitamente: "a nadie nos enseñan finanzas". Si Banco Aliado produce contenido educativo en redes, genera autoridad, confianza y consideración sin vender directamente. Es la puerta de entrada más orgánica al segmento joven.</li></ul><div class="quote-box"><p>Banco Aliado era cero tecnología. Cuando vino la pandemia, nadie de nosotros tenía laptop. Aquí te entregaban un cincel y las tablas de Moisés.</p></div><div class="closing">El relevo generacional no es un problema futuro. Es un problema presente. Los hijos de los mejores clientes del banco ya están decidiendo. y están decidiendo con otros.</div></div><div class="slide-footer"><span>Banco Aliado. Estudio Cualitativo · SL Consultores</span><span>18 / 26</span></div></div></div>
+<div class="slide content"><div class="top-bar"></div><div class="slide-body"><div class="section-label">Relevo generacional</div><h3>Las nuevas generaciones y el banco de cara al futuro</h3><div class="title-line"></div><div class="main-content"><p class="body-text">El estudio revela un desafío generacional que va más allá de la tecnología. Es un cambio en cómo las nuevas generaciones construyen confianza, toman decisiones y se relacionan con las instituciones financieras:</p><ul class="bullet-list"><li><strong>La confianza ya no se hereda, se construye por experiencia directa.</strong> Los hijos de clientes de banca privada no se quedan "porque papá era cliente". Si el banco no les habla en su idioma y en sus canales, migran a Banco General por Yappy o a otros por comodidad. La lealtad generacional ya no es automática.</li><li><strong>Los jóvenes no buscan banco. buscan soluciones.</strong> No les interesa "ser clientes de un banco". Les interesa resolver: pagar, transferir, ahorrar, invertir. El banco que lo resuelva más fácil gana. Banco Aliado tiene el servicio, pero antes del canal le falta definir su voz: una claridad de propósito, una personalidad de marca y un sistema de valores que conecte con estas audiencias. Sin esa base, el canal es solo un medio vacío.</li><li><strong>La decisión bancaria joven es social, no individual.</strong> Los jóvenes eligen por lo que usan sus amigos, por lo que ven en TikTok, por recomendación directa. Si nadie en su círculo habla de Banco Aliado, el banco no existe para ellos. La estrategia de captación juvenil debe ser viral, no publicitaria.</li><li><strong>El tono visual actual es barrera para jóvenes, código de confianza para adultos.</strong> Los jóvenes ven la web y dicen "serio, ejecutivo, anticuado". Los adultos dicen "elegante, profesional". Cualquier evolución visual debe equilibrar ambos sin traicionar a ninguno.</li><li><strong>Educación financiera como puerta de entrada.</strong> Varios jóvenes dijeron explícitamente: "a nadie nos enseñan finanzas". Si Banco Aliado produce contenido educativo en redes, genera autoridad, confianza y consideración sin vender directamente. Es la puerta de entrada más orgánica al segmento joven.</li></ul><div class="quote-box"><p>Banco Aliado era cero tecnología. Cuando vino la pandemia, nadie de nosotros tenía laptop. Aquí te entregaban un cincel y las tablas de Moisés.</p></div><div class="closing">El relevo generacional no es un problema futuro. Es un problema presente. Los hijos de los mejores clientes del banco ya están decidiendo. y están decidiendo con otros.</div></div><div class="slide-footer"><span>Banco Aliado. Estudio Cualitativo · SL Consultores</span><span>18 / 26</span></div></div></div>
 <div class="slide content"><div class="top-bar"></div><div class="slide-body"><div class="section-label">Relevo generacional</div><h3>Jóvenes vs adultos: divergencias que exigen comunicación segmentada</h3><div class="title-line"></div><div class="main-content"><table class="data-table"><thead><tr><th>Dimensión</th><th>Jóvenes (~26 años)</th><th>Adultos (35+)</th></tr></thead><tbody><tr><td><strong>Canal preferido</strong></td><td>100% celular. No van al banco. Apple Pay obligatorio.</td><td>Mezcla digital + presencial para temas grandes.</td></tr><tr><td><strong>Cómo se informan</strong></td><td>TikTok, Instagram, amigos. "Si no estás en redes, no existes."</td><td>Web del banco, research propio, referidos cercanos.</td></tr><tr><td><strong>Criterio dominante</strong></td><td>Comodidad/facilidad por encima de tasa. Todo en un banco con buena app.</td><td>Estabilidad/confianza por encima de facilidad.</td></tr><tr><td><strong>Cómo construyen confianza</strong></td><td>Por experiencia digital directa. Si la app falla, el banco falla.</td><td>Por relación interpersonal. Si el oficial responde, el banco responde.</td></tr><tr><td><strong>Percepción de Banco Aliado</strong></td><td class="critical">"Serio, ejecutivo, algo anticuado, no para mí."</td><td>"Elegante, sencilla, confiable, bien para un banco."</td></tr><tr><td><strong>Yappy</strong></td><td class="critical">Obligatorio. Sin Yappy no hay relación posible.</td><td>Importante pero no decisivo con ACH Express.</td></tr><tr><td><strong>Lealtad bancaria</strong></td><td>Casi nula. Se mueven por facilidad y beneficios.</td><td>Alta por inercia. "Me quedo porque me da pereza cambiar."</td></tr></tbody></table><div class="closing">El banco necesita dos estrategias de comunicación paralelas: una para retener adultos (reforzar lo que funciona) y otra para captar jóvenes (construir desde cero en digital).</div></div><div class="slide-footer"><span>Banco Aliado. Estudio Cualitativo · SL Consultores</span><span>19 / 26</span></div></div></div>
 <div class="slide content"><div class="top-bar"></div><div class="slide-body"><div class="section-label">Síntesis transversal</div><h3>Tres verdades que el estudio confirma</h3><div class="title-line"></div><div class="main-content"><div class="cards cols-3"><div class="card green-border"><div class="card-title">Verdad 1</div><div class="card-body"><strong style="color:var(--navy);">El banco entrega lo que promete, pero solo a quien ya entró.</strong><br><br>La experiencia es sólida. El problema está en la entrada. El mercado masivo no tiene razones claras para entrar. El banco estuvo muchos años sin promocionarse. Las percepciones heredadas actúan como filtros mentales que impiden la consideración.</div></div><div class="card warn-border"><div class="card-title">Verdad 2</div><div class="card-body"><strong style="color:var(--navy);">El activo de marca vive en personas, no en sistemas.</strong><br><br>La fortaleza está en los oficiales y VPs. No en áreas de apoyo ni canales digitales. Crecer en clientes sin institucionalizar la calidez pone en riesgo el diferencial. La cultura no escala por sí sola.</div></div><div class="card accent-border"><div class="card-title">Verdad 3</div><div class="card-body"><strong style="color:var(--navy);">El relevo generacional es urgente, no futuro.</strong><br><br>Los hijos de clientes de banca privada ya están decidiendo. y no están eligiendo Banco Aliado. Sin presencia digital, sin Yappy, sin lenguaje joven, el banco pierde una generación entera. Y con ella, la sostenibilidad del modelo de negocio.</div></div></div><div class="closing">No hay un problema de producto ni de propósito. Hay un problema de traducción generacional y de visibilidad.</div></div><div class="slide-footer"><span>Banco Aliado. Estudio Cualitativo · SL Consultores</span><span>20 / 26</span></div></div></div>
 <div class="slide content"><div class="top-bar"></div><div class="slide-body"><div class="section-label">Síntesis transversal</div><h3>Tres territorios de oportunidad de marca</h3><div class="title-line"></div><div class="main-content"><p class="body-text">Los tres son compatibles entre sí y con el nombre "Aliado". Elegir uno como ancla principal es la decisión pendiente:</p><div class="cards cols-3"><div class="card gold-border"><div class="card-title">1. CONFIANZA CON CRITERIO</div><div class="card-body">Banco que te conoce, te escucha, te aconseja y te dice que no cuando corresponde. No vende por vender. Decir "no" al cliente cuando corresponde genera más confianza que decir siempre "sí".<br><br><em style="color:var(--gold);">Ya soportado por:</em> cultura de asesoría, oficial con nombre, capacidad de decir "no" con criterio.</div></div><div class="card gold-border"><div class="card-title">2. AGILIDAD CON RESPALDO</div><div class="card-body">Banco que resuelve rápido sin dejar de ser sólido. No es el más grande pero decide más rápido. La velocidad de respuesta es el atributo que los clientes más valoran y que la competencia más falla en entregar.<br><br><em style="color:var(--gold);">Ya soportado por:</em> comités 2x/semana, ejecutivo accesible, respuesta rápida.</div></div><div class="card gold-border"><div class="card-title">3. ASESORÍA ÚTIL / ALIANZA REAL</div><div class="card-body">Banco que piensa con el cliente, no solo vende. En un mercado saturado de promesas vacías, demostrar que eres consejero (no vendedor) es el diferenciador más creíble.<br><br><em style="color:var(--gold);">Ya soportado por:</em> cultura consultiva, acceso a VPs, personalización real.</div></div></div></div><div class="slide-footer"><span>Banco Aliado. Estudio Cualitativo · SL Consultores</span><span>21 / 26</span></div></div></div>
 <div class="slide content"><div class="top-bar"></div><div class="slide-body"><div class="section-label">Propuesta de valor</div><h3>Territorio estratégico a conquistar</h3><div class="title-line"></div><div class="main-content"><div style="background:var(--navy);border-radius:12px;padding:28px 36px;margin:8px 0 16px;text-align:center;"><p style="font-family:Playfair Display,serif;font-size:22px;color:white;line-height:1.6;max-width:950px;margin:0 auto;">"El banco que te atiende como persona, con la solidez de uno grande y la agilidad de uno chico."</p></div><div class="two-col"><div><h4 style="font-size:12px;color:var(--navy);font-weight:700;text-transform:uppercase;margin-bottom:6px;">Qué promete</h4><ul class="bullet-list"><li>Atención humana con nombre y cara.</li><li>Agilidad en decisiones.</li><li>Asesoría honesta, no venta.</li><li>Solidez y respaldo (30+ años, banco importante panameño).</li><li>Tasas competitivas. Capital panameño.</li></ul></div><div><h4 style="font-size:12px;color:var(--navy);font-weight:700;text-transform:uppercase;margin-bottom:6px;">A quién apela</h4><ul class="bullet-list"><li>Profesional panameño 28-55 años, NSE medio-alto.</li><li>Empresario que quiere relación, no commodity.</li><li>Cliente de banca privada que busca asesoría real.</li><li>Joven aspiracional que busca banco para crecer.</li><li>Segunda y tercera generación de clientes existentes.</li></ul></div></div></div><div class="slide-footer"><span>Banco Aliado. Estudio Cualitativo · SL Consultores</span><span>22 / 26</span></div></div></div>
-<div class="slide content"><div class="top-bar"></div><div class="slide-body"><div class="section-label">Implicaciones estratégicas</div><h3>Qué mantener, evolucionar, ordenar y evitar</h3><div class="title-line"></div><div class="main-content"><div class="two-col"><div><h4 style="font-size:12px;color:#28a745;font-weight:700;text-transform:uppercase;margin-bottom:6px;">Mantener sí o sí</h4><ul class="bullet-list"><li>Cultura interna sin barreras jerárquicas.</li><li>Modelo de oficial con nombre.</li><li>Agilidad en decisiones.</li><li>Solidez financiera. Capital panameño.</li></ul><h4 style="font-size:12px;color:var(--accent);font-weight:700;text-transform:uppercase;margin-top:12px;margin-bottom:6px;">Evitar</h4><ul class="bullet-list"><li>Tono "best friend" que infantiliza.</li><li>Parecer Banco General en miniatura.</li><li>Guerras de precio.</li><li>Perder cultura por crecer rápido.</li></ul></div><div><h4 style="font-size:12px;color:var(--navy);font-weight:700;text-transform:uppercase;margin-bottom:6px;">Evolucionar</h4><ul class="bullet-list"><li>Tono verbal y visual (sin tonos de antigüedad).</li><li>Presencia digital constante en redes.</li><li>Canales digitales con calidez del oficial.</li><li>Comunicación de productos de consumo.</li><li>Asesoría proactiva (no reactiva).</li><li>Estrategia específica para captar nuevas generaciones.</li></ul><h4 style="font-size:12px;color:var(--gold);font-weight:700;text-transform:uppercase;margin-top:12px;margin-bottom:6px;">Ordenar</h4><ul class="bullet-list"><li>Analizar posible reemplazo de nomenclatura interna.</li><li>Venta cruzada interna.</li><li>Procesos que saturan al oficial.</li><li>Medición de satisfacción y calidad.</li><li>Alianzas con comercios de consumo frecuente.</li></ul></div></div></div><div class="slide-footer"><span>Banco Aliado. Estudio Cualitativo · SL Consultores</span><span>23 / 26</span></div></div></div>
+<div class="slide content"><div class="top-bar"></div><div class="slide-body"><div class="section-label">Implicaciones estratégicas</div><h3>Qué mantener, evolucionar, ordenar y evitar</h3><div class="title-line"></div><div class="main-content"><div class="two-col"><div><h4 style="font-size:12px;color:#28a745;font-weight:700;text-transform:uppercase;margin-bottom:6px;">Mantener sí o sí</h4><ul class="bullet-list"><li>Cultura interna sin barreras jerárquicas.</li><li>Modelo de oficial con nombre.</li><li>Agilidad en decisiones.</li><li>Solidez financiera. Capital panameño.</li></ul><h4 style="font-size:12px;color:var(--accent);font-weight:700;text-transform:uppercase;margin-top:12px;margin-bottom:6px;">Evitar</h4><ul class="bullet-list"><li>Tono "best friend" que infantiliza.</li><li>Parecer Banco General en miniatura.</li><li>Guerras de precio.</li><li>Perder cultura por crecer rápido.</li></ul></div><div><h4 style="font-size:12px;color:var(--navy);font-weight:700;text-transform:uppercase;margin-bottom:6px;">Evolucionar</h4><ul class="bullet-list"><li>Desarrollar un sistema integral de marca que vaya más allá de lo visual: propósito, personalidad, voz, valores y acciones de marca que conecten con lo que el banco quiere significar para el mundo, no solo para sus clientes.</li><li>Presencia digital constante en redes.</li><li>Canales digitales con calidez del oficial.</li><li>Comunicación de productos de consumo.</li><li>Asesoría proactiva (no reactiva).</li>
+<li><strong>Entender que la marca no es solo el logo.</strong> Es un sistema estratégico integral: propósito (qué quiere el banco para el mundo, más allá de la banca), personalidad (cómo habla, cómo se comporta), valores (qué defiende), acciones de marca (qué hace fuera de su producto, por ejemplo, educación financiera en escuelas). La evolución visual es una respuesta a todo ese sistema, no el punto de partida.</li><li>Estrategia específica para captar nuevas generaciones.</li></ul><h4 style="font-size:12px;color:var(--gold);font-weight:700;text-transform:uppercase;margin-top:12px;margin-bottom:6px;">Ordenar</h4><ul class="bullet-list"><li>Analizar posible reemplazo de nomenclatura interna.</li><li>Venta cruzada interna.</li><li>Procesos que saturan al oficial.</li><li>Medición de satisfacción y calidad.</li><li>Alianzas con comercios de consumo frecuente.</li></ul></div></div></div><div class="slide-footer"><span>Banco Aliado. Estudio Cualitativo · SL Consultores</span><span>23 / 26</span></div></div></div>
 <div class="slide content"><div class="top-bar"></div><div class="slide-body"><div class="section-label">Conclusiones</div><h3>De cara al relevo generacional: lo que el banco no puede postergar</h3><div class="title-line"></div><div class="main-content"><p class="body-text">El estudio revela que el desafío generacional no es un tema de "marketing para jóvenes". Es un tema de sostenibilidad del modelo de negocio:</p><ul class="bullet-list"><li><strong>Los clientes de banca privada están envejeciendo.</strong> Gran parte de la cartera es de una generación mayor. Sus hijos y nietos no tienen vínculo emocional con el banco. Si no se construye relación con ellos ahora, esos activos migrarán cuando ocurra la sucesión patrimonial.</li><li><strong>Productos como Aliado Kids existen pero nadie los conoce.</strong> El banco tiene herramientas para captar familias jóvenes. No las comunica. Un programa de educación financiera infantil vinculado a apertura de cuentas sería un gatillo de entrada natural.</li><li><strong>La estrategia digital no es opcional, es existencial.</strong> Sin Yappy, sin Apple Pay, sin presencia en TikTok/Instagram, sin apertura digital de cuentas. el banco no existe para menores de 30 años. Y los menores de 30 de hoy serán los clientes de banca privada de mañana.</li><li><strong>El tono visual debe evolucionar sin traicionar.</strong> No es un cambio total del logo, es una evolución. Es que la web, la app, las redes y las comunicaciones dejen de sentirse "" para jóvenes sin perder la elegancia que los adultos valoran.</li><li><strong>Contenido educativo: la puerta más orgánica.</strong> Los jóvenes lo piden explícitamente. Un banco que educa en finanzas personales genera autoridad, confianza y consideración. Es publicidad que no parece publicidad. y es exactamente lo que esta generación consume.</li></ul><div class="closing">El relevo generacional se gana hoy. Si el banco espera a que los jóvenes "maduren" para buscarlos, otros bancos ya se los habrán llevado.</div></div><div class="slide-footer"><span>Banco Aliado. Estudio Cualitativo · SL Consultores</span><span>24 / 26</span></div></div></div>
 <div class="slide big-quote"><div><div class="bq-mark">"</div><div class="bq-text">El mercado no le pide a Banco Aliado<br>que sea Banco General.<br><br>Le pide que sea él mismo,<br>pero visible.</div></div></div>
 <div class="slide closing-slide"><div class="gold-line-c"></div><h2>¡Gracias!</h2><div class="cs-subtitle">Estudio Cualitativo Banco Aliado</div><div class="cs-subtitle">Reporte Final · Abril 2026</div><div class="cs-brand">SL Consultores</div></div>
